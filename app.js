@@ -3,7 +3,6 @@ import { renderGame } from './render-utils.js';
 
 const currentGameEl = document.getElementById('current-game-container');
 const pastGamesEl = document.getElementById('past-games-container');
-const logoutButton = document.getElementById('logout');
 
 const nameForm = document.getElementById('name-form');
 const teamOneAddButton = document.getElementById('team-one-add-button');
