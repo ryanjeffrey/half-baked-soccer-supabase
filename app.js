@@ -23,13 +23,17 @@ let currentGame = {
 
 nameForm.addEventListener('submit', (e) => {
     // don't forget to prevent the default form behavior!
-
+    e.preventDefault();
     // get the name data from the form
-
+    const formData = new FormData(nameForm);
     // set the state to this data from the form
+    const name1 = formData.get('team-one');
+    const name2 = formData.get('team-two');
 
+    currentGame.name1 = name1;
+    currentGame.name2 = name2;
     // reset the form values
-
+    nameForm.reset();
     displayCurrentGameEl();
 });
 
